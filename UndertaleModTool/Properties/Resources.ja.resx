@@ -118,162 +118,159 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Back" xml:space="preserve">
-    <value>Back</value>
+    <value>戻る</value>
   </data>
   <data name="Data" xml:space="preserve">
-    <value>Data</value>
+    <value>データ</value>
   </data>
   <data name="Data_AudioGroups" xml:space="preserve">
-    <value>Audio groups</value>
+    <value>オーディオグループ</value>
   </data>
   <data name="Data_BGAndTileSets" xml:space="preserve">
-    <value>Backgrounds &amp;amp; Tile sets</value>
+    <value>背景とタイルセット</value>
   </data>
   <data name="Data_Code" xml:space="preserve">
-    <value>Code</value>
+    <value>コード</value>
   </data>
   <data name="Data_CodeLocals" xml:space="preserve">
-    <value>Code locals (unused?)</value>
+    <value>コードのローカル(未使用？)</value>
   </data>
   <data name="Data_EmbeddedAudio" xml:space="preserve">
-    <value>Embedded audio</value>
+    <value>埋め込みオーディオ</value>
   </data>
   <data name="Data_EmbeddedImages" xml:space="preserve">
-    <value>Embedded images</value>
+    <value>埋め込み画像</value>
   </data>
   <data name="Data_EmbeddedTextures" xml:space="preserve">
-    <value>Embedded textures</value>
+    <value>埋め込みテクスチャ</value>
   </data>
   <data name="Data_Extensions" xml:space="preserve">
-    <value>Extensions</value>
+    <value>拡張機能</value>
   </data>
   <data name="Data_Fonts" xml:space="preserve">
-    <value>Fonts</value>
+    <value>フォント</value>
   </data>
   <data name="Data_Functions" xml:space="preserve">
-    <value>Functions</value>
+    <value>関数</value>
   </data>
   <data name="Data_GameObjects" xml:space="preserve">
-    <value>Game objects</value>
+    <value>ゲームオブジェクト</value>
   </data>
   <data name="Data_GeneralInfo" xml:space="preserve">
-    <value>General Info</value>
+    <value>一般情報</value>
   </data>
   <data name="Data_GlobalInit" xml:space="preserve">
-    <value>Gloval init</value>
+    <value>グローバル初期化</value>
   </data>
   <data name="Data_Paths" xml:space="preserve">
-    <value>Paths</value>
+    <value>パス</value>
   </data>
   <data name="Data_Rooms" xml:space="preserve">
-    <value>Rooms</value>
+    <value>部屋</value>
   </data>
   <data name="Data_Scripts" xml:space="preserve">
-    <value>Scripts</value>
+    <value>スクリプト</value>
   </data>
   <data name="Data_Shaders" xml:space="preserve">
-    <value>Shaders</value>
+    <value>シェーダー</value>
   </data>
   <data name="Data_Sounds" xml:space="preserve">
-    <value>Sounds</value>
+    <value>サウンド</value>
   </data>
   <data name="Data_Sprites" xml:space="preserve">
-    <value>Sprites</value>
+    <value>スプライト</value>
   </data>
   <data name="Data_Strings" xml:space="preserve">
-    <value>Strings</value>
+    <value>文字列</value>
   </data>
   <data name="Data_TextureGroupInformation" xml:space="preserve">
-    <value>Texture group information</value>
+    <value>テクスチャグループ情報</value>
   </data>
   <data name="Data_TexturePageItems" xml:space="preserve">
-    <value>Texture page items</value>
+    <value>テクスチャページアイテム</value>
   </data>
   <data name="Data_TimeLines" xml:space="preserve">
-    <value>Timelines</value>
+    <value>タイムライン</value>
   </data>
   <data name="Data_Variables" xml:space="preserve">
-    <value>Variables</value>
+    <value>変数</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Language</value>
+    <value>言語(Language)</value>
   </data>
   <data name="Menu_File" xml:space="preserve">
-    <value>_File</value>
+    <value>ファイル(_F)</value>
   </data>
   <data name="Menu_File_BatchDecompile" xml:space="preserve">
-    <value>_Batch decompile</value>
+    <value>バッチ デコンパイル(_B)</value>
   </data>
   <data name="Menu_File_Close" xml:space="preserve">
-    <value>_Close</value>
+    <value>閉じる(_C)</value>
   </data>
   <data name="Menu_File_ExportToGameMakerProject" xml:space="preserve">
-    <value>Export to GameMaker project</value>
+    <value>GameMaker プロジェクトにエクスポート</value>
   </data>
   <data name="Menu_File_GenerateOffsetMap" xml:space="preserve">
-    <value>Generate o_ffset map</value>
+    <value>オフセットマップを生成(_F)</value>
   </data>
   <data name="Menu_File_New" xml:space="preserve">
-    <value>_New</value>
+    <value>新規(_N)</value>
   </data>
   <data name="Menu_File_Open" xml:space="preserve">
-    <value>_Open</value>
+    <value>開く(_O)</value>
   </data>
   <data name="Menu_File_RunGame" xml:space="preserve">
-    <value>_Run game</value>
+    <value>ゲームを実行(_G)</value>
   </data>
   <data name="Menu_File_RunGameUnderDebugger" xml:space="preserve">
-    <value>Run game under _debugger</value>
+    <value>デバッガでゲームを実行(_D)</value>
   </data>
   <data name="Menu_File_Save" xml:space="preserve">
-    <value>_Save</value>
+    <value>保存(_S)</value>
   </data>
   <data name="Menu_File_Settings" xml:space="preserve">
-    <value>S_ettings</value>
+    <value>設定(_E)</value>
   </data>
   <data name="Menu_Help" xml:space="preserve">
-    <value>_Help</value>
+    <value>ヘルプ(_H)</value>
   </data>
   <data name="Menu_Help_About" xml:space="preserve">
-    <value>_About</value>
-  </data>
-  <data name="Menu_Help_GitHub" xml:space="preserve">
-    <value>_GitHub</value>
+    <value>情報(_A)</value>
   </data>
   <data name="Menu_Scripts" xml:space="preserve">
-    <value>_Scripts</value>
+    <value>スクリプト(_S)</value>
   </data>
   <data name="Menu_Scripts_RunBuiltinScript" xml:space="preserve">
-    <value>_Run builtin script</value>
+    <value>組み込みのスクリプトを実行(_R)</value>
   </data>
   <data name="Menu_Scripts_RunBuiltinScript_Loading" xml:space="preserve">
-    <value>(...loading...)</value>
+    <value>(…読み込み中…)</value>
   </data>
   <data name="Menu_Scripts_RunOtherScript" xml:space="preserve">
-    <value>Run _other script...</value>
+    <value>外部のスクリプトを実行…(_O)</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Search</value>
+    <value>検索</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>設定</value>
   </data>
   <data name="Settings_GMS14Path" xml:space="preserve">
-    <value>Game Maker: Studio 1.4 path</value>
+    <value>Game Maker: Studio 1.4 のパス</value>
   </data>
   <data name="Settings_GMS14Path_ToolTip" xml:space="preserve">
-    <value>Tested to work with v1.4.1773, which is close to release date of latest Undertale patch. Required only if you want to run the game under debugger.</value>
+    <value>最新の Undertale パッチのリリース日に近い v1.4.1773 で動作することがテストされました。 デバッガでゲームを実行する場合にのみ必要です。</value>
   </data>
   <data name="Settings_GraphVizPath" xml:space="preserve">
-    <value>GraphViz path</value>
+    <value>GraphViz のパス</value>
   </data>
   <data name="Settings_GraphVizPath_ToolTip" xml:space="preserve">
-    <value>Required if you want code decompile graphs</value>
+    <value>グラフをデコンパイルする場合に必要です</value>
   </data>
   <data name="WelcomeToUndertaleModTool" xml:space="preserve">
-    <value>Welcome to UndertaleModTool!</value>
+    <value>UndertaleModToolへようこそ！</value>
   </data>
   <data name="WelcomeToUndertaleModTool_Description" xml:space="preserve">
-    <value>Open data.win file to get started, then double click on the items on the left to view them</value>
+    <value>data.winファイルを開き、左の項目をダブルクリックして表示します</value>
   </data>
 </root>

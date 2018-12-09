@@ -104,13 +104,13 @@ namespace UndertaleModTool
                     existingwriter.Flush();
                     return;
                 }
-                catch(IOException e)
+                catch (IOException e)
                 {
                     Debug.WriteLine(e);
                     childFiles.Remove(filename);
                 }
             }
-            
+
             string key = Guid.NewGuid().ToString();
 
             string dir = System.IO.Path.GetDirectoryName(FilePath);
@@ -127,7 +127,7 @@ namespace UndertaleModTool
 
         public void CloseChildFiles()
         {
-            foreach(var pair in childFiles)
+            foreach (var pair in childFiles)
             {
                 pair.Value.Close();
             }
@@ -139,7 +139,7 @@ namespace UndertaleModTool
             var client = new NamedPipeClientStream(key);
             client.Connect();
             StreamReader reader = new StreamReader(client);
-            
+
             while (true)
             {
                 string[] thingToOpen = (await reader.ReadLineAsync()).Split(':');
@@ -320,7 +320,7 @@ namespace UndertaleModTool
                         }
                     }
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     MessageBox.Show("An error occured while trying to save:\n" + e.Message, "Save error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
@@ -410,7 +410,7 @@ namespace UndertaleModTool
 
         private void TreeView_DragOver(object sender, DragEventArgs e)
         {
-            UndertaleObject sourceItem = e.Data.GetData(e.Data.GetFormats()[e.Data.GetFormats().Length-1]) as UndertaleObject; // TODO: make this more reliable
+            UndertaleObject sourceItem = e.Data.GetData(e.Data.GetFormats()[e.Data.GetFormats().Length - 1]) as UndertaleObject; // TODO: make this more reliable
 
             foreach (var s in e.Data.GetFormats())
                 Debug.WriteLine(s);
@@ -442,7 +442,7 @@ namespace UndertaleModTool
             }
             e.Handled = true;
         }
-        
+
         private static T VisualUpwardSearch<T>(DependencyObject element) where T : class
         {
             T container = element as T;
@@ -511,7 +511,7 @@ namespace UndertaleModTool
             TreeViewItem container = GetNearestParent<TreeViewItem>(GetTreeViewItemFor(obj));
             object source = container.ItemsSource;
             IList list = ((source as ICollectionView)?.SourceCollection as IList) ?? (source as IList);
-            bool isLast = list.IndexOf(obj) == list.Count-1;
+            bool isLast = list.IndexOf(obj) == list.Count - 1;
             if (MessageBox.Show("Delete " + obj.ToString() + "?" + (!isLast ? "\n\nNote that the code often references objects by ID, so this operation is likely to break stuff because other items will shift up!" : ""), "Confirmation", MessageBoxButton.YesNo, isLast ? MessageBoxImage.Question : MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
                 list.Remove(obj);
@@ -534,7 +534,7 @@ namespace UndertaleModTool
                 }
             }
         }
-        
+
         private async void CommandBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter && !Keyboard.Modifiers.HasFlag(ModifierKeys.Shift))
@@ -621,6 +621,16 @@ namespace UndertaleModTool
             list.Add(obj);
             // TODO: change highlighted too
             ChangeSelection(obj);
+        }
+
+        private void SetLanguageToEnglish(object sender, RoutedEventArgs e)
+        {
+            ResourceService.Current.ChangeCulture("en");
+        }
+
+        private void SetLanguageToJapanese(object sender, RoutedEventArgs e)
+        {
+            ResourceService.Current.ChangeCulture("ja");
         }
 
         private void MenuItem_RunBuiltinScript_SubmenuOpened(object sender, RoutedEventArgs e)

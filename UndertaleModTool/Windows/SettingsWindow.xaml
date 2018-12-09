@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UndertaleModTool"
         mc:Ignorable="d"
-        Title="Settings" Height="Auto" Width="800" SizeToContent="Height" WindowStartupLocation="CenterOwner">
+        Title="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Settings, Mode=OneWay}" Height="Auto" Width="800" SizeToContent="Height" WindowStartupLocation="CenterOwner">
+
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -14,12 +15,23 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.Column="0" Margin="3" Text="GraphViz path" ToolTip="Required if you want code decompile graphs"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="3" Text="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Settings_GraphVizPath, Mode=OneWay}" ToolTip="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Settings_GraphVizPath_ToolTip, Mode=OneWay}" />
         <TextBox Grid.Row="0" Grid.Column="1" Margin="3" Text="{Binding GraphVizPath}"/>
 
-        <TextBlock Grid.Row="1" Grid.Column="0" Margin="3" Text="Game Maker: Studio 1.4 path" ToolTip="Tested to work with v1.4.1773, which is close to release date of latest Undertale patch. Required only if you want to run the game under debugger."/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="3" Text="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Settings_GMS14Path, Mode=OneWay}" ToolTip="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Settings_GMS14Path_ToolTip, Mode=OneWay}"/>
         <TextBox Grid.Row="1" Grid.Column="1" Margin="3" Text="{Binding GameMakerStudioPath}"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="3" Text="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Language, Mode=OneWay}" ToolTip="{Binding  Source={x:Static local:ResourceService.Current}, Path=Resources.Settings_GMS14Path_ToolTip, Mode=OneWay}" IsEnabled="False"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" Margin="3"  SelectedIndex="3" IsEnabled="False" >
+            <ComboBoxItem Content="Auto"/>
+            <ComboBoxItem Content="en"/>
+            <ComboBoxItem Content="ja"/>
+            <ComboBoxItem Content="TODO"/>
+        </ComboBox>
+        
+
     </Grid>
 </Window>
